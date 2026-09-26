@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Produk - Mini Shopee</title>
+  <link rel="stylesheet" href="catalog.css">
+
+  <script src="catalog.js" defer></script>
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-brand">Mini Shopee</div>
+  <div class="nav-user">
+    <span id="welcomeMessage">Selamat datang, Guest</span>
+    
+    <button id="logoutBtn">Logout</button>
+  </div>
+</nav>
+
+  <main class="container">
+    <section class="controls-section">
+      <input type="text" id="search-input" placeholder="Cari nama atau kategori produk...">
+      
+      <select id="category-filter">
+        <option value="all">Semua Kategori</option>
+      </select>
+
+      <select id="sort-filter">
+        <option value="default">Urutkan</option>
+        <option value="price-asc">Harga termurah</option>
+        <option value="price-desc">Harga termahal</option>
+        <option value="rating-desc">Rating tertinggi</option>
+      </select>
+    </section>
+
+    <!-- Wadah utama untuk render produk dinamis -->
+    <section id="product-grid" class="grid-container">
+    </section>
+    
+    <div class="load-more-container">
+      <button id="btn-load-more">Load More</button>
+    </div>
+  </main>
+</body>
+</html>

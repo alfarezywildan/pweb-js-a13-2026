@@ -1,6 +1,6 @@
 
 if (localStorage.getItem('firstName')) {
-    window.location.href = 'index.html';
+    window.location.href = 'catalog.html';
 }
 
 const loginForm = document.getElementById('loginForm');
@@ -40,7 +40,7 @@ loginForm.addEventListener('submit', async (e) => {
             localStorage.setItem('firstName', validUser.firstName);
             
             // Arahkan ke halaman katalog produk
-            window.location.href = 'index.html';
+            window.location.href = 'catalog.html';
         } else {
             errorMessage.textContent = 'Username atau password salah!';
         }
