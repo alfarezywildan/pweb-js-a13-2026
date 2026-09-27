@@ -12,10 +12,24 @@
 <nav class="navbar">
   <div class="nav-brand">Mini Shopee</div>
   <div class="nav-user">
-    <span id="welcomeMessage">Selamat datang, Guest</span>
-    
-    <button id="logoutBtn">Logout</button>
+  <span id="welcomeMessage">Selamat datang, Guest</span>
+
+  <div class="cart-info">
+    <span>
+      🛒 Keranjang:
+      <span id="cart-badge">0</span>
+    </span>
+
+    <span>
+      Total:
+      <span id="cart-total">$0.00</span>
+    </span>
+
+    <button id="clear-cart">Kosongkan Keranjang</button>
   </div>
+
+  <button id="logoutBtn">Logout</button>
+</div>
 </nav>
 
   <main class="container">
@@ -42,5 +56,29 @@
       <button id="btn-load-more">Load More</button>
     </div>
   </main>
+
+  <div id="product-modal" class="modal" hidden>
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close">&times;</button>
+
+      <img id="modal-image" src="" alt="Gambar produk">
+
+      <div class="modal-info">
+        <h2 id="modal-title"></h2>
+
+        <p id="modal-price"></p>
+        <p id="modal-rating"></p>
+        <p id="modal-stock"></p>
+        <p id="modal-brand"></p>
+        <p id="modal-category"></p>
+        <p id="modal-description"></p>
+        
+        <button id="modal-add-cart" class="btn-tambah-keranjang">
+          Tambah ke Keranjang
+        </button>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
